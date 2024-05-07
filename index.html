@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="d-flex flex-column align-items-center text-center">
+      <h1>Three Sister Planets</h1>
+      <p>Earth, Mars and Venus</p>
+    </header>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg shadow">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+        >
+          <div class="hamburger-toggle">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle planets-link"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+                style="font-size: larger"
+                >&nbsp;Menu</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li>
+                  <a class="dropdown-item" href="index.html">&nbsp;Home</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="planets.html">&nbsp;Planets</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about.html">&nbsp;About</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+
+    <div
+      id="planetcarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#planetcarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#planetcarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#planetcarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block" src="images/earth.jpg" alt="earth" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="images/mars.jpg" alt="mars" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="images/venus.jpg" alt="venus" />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#planetcarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#planetcarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- CARDS -->
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- EARTH -->
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="images/earth.jpg"
+              class="card-img-top"
+              alt="Earth Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Earth: A Jewel in the Cosmos</h5>
+              <p class="card-text">
+                Earth is the third planet from the Sun and a beacon of life in
+                our solar system. Its diverse landscapes, ranging from towering
+                mountains to expansive oceans, provide a nurturing environment
+                for an incredible array of species. A moderate climate,
+                sustained by a protective atmosphere, allows for the existence
+                of liquid water—a fundamental ingredient for life as we know it.
+                Earth stands as a testament to the delicate balance of
+                conditions that have given rise to the complexity and beauty of
+                our biosphere.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MARS -->
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/mars.jpg" class="card-img-top" alt="Mars Image" />
+            <div class="card-body">
+              <h5 class="card-title">Mars: The Enigmatic Red Planet</h5>
+              <p class="card-text">
+                Mars, often called the "Red Planet" for its distinctive rusty
+                hue, has long captivated human imagination. As the fourth planet
+                from the Sun, Mars is a world of extremes. Vast deserts,
+                colossal volcanoes, and a canyon system that dwarfs Earth's
+                Grand Canyon paint a landscape that hints at a tumultuous
+                geological history. Scientists eagerly explore Mars for signs of
+                past or present life, as well as clues about the planet's
+                evolution and potential for human exploration.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VENUS -->
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="images/venus.jpg"
+              class="card-img-top"
+              alt="Venus Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Venus: The Harsh Mistress of the Skies</h5>
+              <p class="card-text">
+                Venus, the second planet from the Sun, presents a stark contrast
+                to the more temperate worlds in our solar system. With surface
+                temperatures that can melt lead and a thick atmosphere composed
+                mainly of carbon dioxide, Venus is a hostile and unforgiving
+                environment. Sulfuric acid clouds shroud its surface, obscuring
+                the view and adding to the planet's inhospitality. Despite these
+                challenges, Venus holds valuable lessons about the extremes to
+                which planetary atmospheres can evolve, offering insights into
+                the broader understanding of planetary science.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <p>© 2024 by Jani Hiltunen</p>
+        <div class="socials">
+          <a
+            href="https://jhiltunenportfolio.netlify.app"
+            target="_blank"
+            style="margin-right: 15px; text-decoration: none"
+            title="My portfolio page"
+          >
+            <img
+              src="images/portfolioicon.png"
+              alt="Portfolio"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://github.com/JangoHiltzy"
+            target="_blank"
+            style="margin-right: 15px; text-decoration: none"
+            title="My GitHub profile"
+          >
+            <img src="images/githubicon.png" alt="GitHub" class="social-icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hiltzy/"
+            target="_blank"
+            style="margin-right: 15px; text-decoration: none"
+            title="My LinkedIn profile"
+          >
+            <img src="images/linkedinicon.png" alt="My LinkedIn profile" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function (event) {
+        var navbarToggler = document.querySelectorAll('.navbar-toggler')[0];
+        navbarToggler.addEventListener('click', function (e) {
+          e.target.children[0].classList.toggle('active');
+        });
+      });
+    </script>
+  </body>
+</html>

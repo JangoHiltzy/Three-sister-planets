@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="d-flex flex-column align-items-center text-center">
+      <h1>Three Sister Planets</h1>
+      <p>Earth, Mars and Venus</p>
+    </header>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg shadow">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+        >
+          <div class="hamburger-toggle">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle planets-link"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+                style="font-size: larger"
+                >&nbsp;Menu</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li>
+                  <a class="dropdown-item" href="index.html">&nbsp;Home</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="planets.html">&nbsp;Planets</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about.html">&nbsp;About</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ABOUT -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 mx-auto text-center">
+          <h1>About</h1>
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                This was a Bootstrap project done by me to practice building a
+                website with useful functions. Hope that you liked it!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <p>© 2024 by Jani Hiltunen</p>
+        <div class="socials">
+          <a
+            href="https://jhiltunenportfolio.netlify.app"
+            target="_blank"
+            style="margin-right: 15px; text-decoration: none"
+            title="My portfolio page"
+          >
+            <img
+              src="images/portfolioicon.png"
+              alt="Portfolio"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://github.com/JangoHiltzy"
+            target="_blank"
+            style="margin-right: 15px; text-decoration: none"
+            title="My GitHub profile"
+          >
+            <img src="images/githubicon.png" alt="GitHub" class="social-icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hiltzy/"
+            target="_blank"
+            style="margin-right: 15px; text-decoration: none"
+            title="My LinkedIn profile"
+          >
+            <img src="images/linkedinicon.png" alt="My LinkedIn profile" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function (event) {
+        var navbarToggler = document.querySelectorAll('.navbar-toggler')[0];
+        navbarToggler.addEventListener('click', function (e) {
+          e.target.children[0].classList.toggle('active');
+        });
+      });
+    </script>
+  </body>
+</html>
